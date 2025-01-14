@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Sneha Dube Pandit BJP, MLA, Maharashtra</title>
+    <link rel="icon" href="../img/titlelogo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+       #navbar 
+       {
+        min-height:50px;
+       }
+
+        .hero-section {
+            background-image: url("../img/Patrakar Din.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            position: relative;
+        }
+        
+        .blog-text1 {
+            position: absolute;
+            top: 45%;
+            font-size: 45px;
+            font-weight: bold;
+            color: #fff;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .blog-text2 {
+            position: absolute;
+            top: 360px;
+            left: 35px;
+            bottom: 0;
+            font-size: 18px;
+            color: white;
+        }
+
+        .blog-text2 a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .blog-box {
+            width: 30%;
+            min-width: 300px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .blog-header {
+            background-color: #e61e0c;
+            color: white;
+            padding: 15px;
+            font-size: 1.0rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .blog-content {
+            padding: 15px;
+        }
+
+        .blog-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .blog-title a {
+            text-decoration: none;
+            color: #0073e6;
+            flex-grow: 1;
+        }
+
+        .blog-title a:hover {
+            text-decoration: underline;
+        }
+
+        .blog-title .date {
+            color: #ff6f61;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .comments-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-top: 1px solid #ddd;
+        }
+
+        .comments-section svg {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .comments-section .username,
+        .comments-section .comments-count {
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #5f6368;
+        }
+        /* scroll */
+        .scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      font-size: 16px;
+      background-color: #fff;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: none; /* Initially hidden */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .scroll-to-top:hover {
+      color: #fff;
+    }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .blog-box {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            .blog-text1 {
+                font-size: 30px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .blog-text2 {
+                font-size: 14px;
+            }
+
+            .pagination a {
+                font-size: 1rem;
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-text1 {
+                font-size: 25px;
+            }
+
+            .blog-text2 {
+                font-size: 12px;
+            }
+
+            .pagination a {
+                font-size: 0.9rem;
+                width: 25px;
+                height: 25px;
+            }
+
+            .blog-title {
+                font-size: 1rem;
+            }
+
+            .blog-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+ <!-- Navbar -->
+     <div id="navbar" class="sticky top-0 z-50"></div>
+    <!-- Header Section -->
+    <!-- Hero Section -->
+<div class="hero-section ">
+<div class="blog-text1 text-4xl font-bold">Blog - Sneha Dube Pandit</div>
+<div class="blog-text2 mt-2">
+    <a href="Home.html" class="text-white underline hover:text-yellow-400">Home</a>
+    <span class="mx-2">></span>
+    <b class="text-yellow-400">Blog</b>
+</div>
+</div>
+
+<!-- Blog Articles Section -->
+<div class="container mx-auto px-4 py-8" id="blog-container">
+<!-- Initial blog content will be loaded here -->
+</div>
+
+<!-- Pagination Section -->
+<div class="pagination flex justify-center items-center space-x-4 py-4" id="pagination">
+<a href="#" onclick="loadPage(1)" class="px-4 py-2 rounded-full bg-yellow-400 text-white hover:bg-yellow-500 transition active">1</a>
+<a href="#" onclick="loadPage(2)" class="px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-yellow-400 hover:text-white transition">2</a>
+<a href="#" onclick="loadPage(3)" class="px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-yellow-400 hover:text-white transition">3</a>
+</div>
+<!-- footer -->
+<div id="footer"></div>
+<!-- scroll-top-up -->
+    <button id="scrollToTopBtn" class="fixed bottom-5 right-5 bg-orange-500 text-white p-3 rounded-full shadow-lg hover:bg-orange-600 hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="currentColor">
+            <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"/>
+        </svg>
+      </button>
+    <script src="../js/news.js"></script>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script >
+        $(document).ready(function(){
+            $("#navbar").load("navbar.html");
+            $("#footer").load("footer.html");
+
+        });
+    </script>
+
+</body>
+</html>

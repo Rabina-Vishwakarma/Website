@@ -1,0 +1,175 @@
+/* General slider container styles */
+.slider-container3 {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  width: 100%; /* Ensure container takes up full width */
+  max-width: 1500px; 
+  margin: auto;
+  position: relative;
+  padding: 0 50px; /* Add padding for buttons */
+}
+
+/* Navigation button styles */
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: none; /* Ensure no background is applied */
+  border: none; /* Remove borders */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease; /* Smooth transition for hover */
+  z-index: 10;
+  outline: none; /* Remove focus outline */
+  padding: 0; /* Remove padding */
+}
+
+/* Icon styles for buttons */
+.btn i {
+  font-size: 40px;
+  color: orangered;
+  transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Hover effects */
+.btn:hover i {
+  color: #ff3300; /* Slightly darker shade on hover */
+}
+
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+/* Hover effects */
+
+
+/* Ensure slider wrapper doesn't overlap buttons */
+.slider-wrapper3 {
+  flex-grow: 1;
+  overflow: hidden;
+  margin: 0 40px;
+}
+
+.slider3 {
+  display: flex;
+  transition: transform 0.4s ease;
+  will-change: transform;
+  width: max-content;
+}
+
+/* Card Styles */
+.card3 {
+  flex: 0 0 calc(33.333% - 20px); /* For large screens, 3 cards per row */
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 350px;
+  max-width: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle card shadow */
+  transition: box-shadow 0.3s ease;
+}
+.card3:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.card3 img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.view-more-btn {
+  height: 40px;
+  width: 120px;
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease; /* Added transform on hover */
+}
+
+.view-more-btn:hover {
+  background-color: #ff3300;
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Scroll-to-top button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #fff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-to-top:hover {
+  color: #fff;
+}
+
+/* Media Queries */
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .card3 {
+    flex: 0 0 calc(50% - 20px); /* For tablets, 2 cards per row */
+  }
+
+  .slider-container3 {
+    padding: 0 20px; /* Reduce padding for tablet screens */
+  }
+
+  .btn {
+    width: 40px;
+    height: 40px;
+    font-size: 32px;
+  }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 480px) {
+  .card3 {
+    flex: 0 0 calc(100% - 20px); /* For mobiles, 1 card per row */
+  }
+
+  .slider-container3 {
+    padding: 0 15px; /* Further reduce padding for mobile screens */
+  }
+
+  .btn {
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+  }
+
+  .view-more-btn {
+    width: 100px; /* Adjust button width for mobile */
+    font-size: 14px;
+  }
+}

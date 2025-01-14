@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sneha Dubey Pandit Biography</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Card Hover Effects */
+    .card:hover {
+      transform: translateY(-8px);
+      background-color: #cce4f7; /* Lighter Blue on hover */
+    }
+
+    /* Title Styling Inside Card */
+    .card-title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+      color: white;
+      font-size: 1.4rem;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    /* Show title on card hover */
+    .card:hover .card-title {
+      opacity: 1;
+    }
+
+    /* Card Basic Styles */
+    .card {
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      padding: 1.5rem;
+      position: relative;
+      background-color: #e1f4ff;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Card Button Styling */
+    .card-button {
+      transition: background-color 0.3s ease;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    /* Hover button effect */
+    .card-button:hover {
+      background-color: #0056b3; /* Darker Blue on hover */
+    }
+
+    /* Card header image */
+    .card-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 4px solid #4c9f70;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Grid Container Styles */
+    .grid-container {
+      gap: 2rem;
+    }
+
+    /* Title Text for Card */
+    .card-title-text {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    /* Bio Section Button */
+    .bio-button {
+      font-weight: bold;
+    }
+
+    /* Reduce gap between columns on mobile */
+    @media (max-width: 640px) {
+      .grid-container {
+        gap: 1.5rem;
+      }
+    }
+
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Biography Sections -->
+  <div class="flex items-center justify-center min-h-screen px-4 py-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl w-full grid-container">
+      
+      <!-- Biography Card 1 -->
+      <div class="card relative bg-white rounded-lg shadow-md">
+        <!-- Title Inside Card -->
+                <!-- Header Section -->
+        <div class="flex items-center mb-4">
+          <img 
+            src="../img/titlelogo.png" 
+            alt="Sneha Dubey" 
+            class="card-img"
+          />
+          <div class="ml-4">
+            <h2 class="text-xl font-semibold text-gray-800">Sneha Dubey Pandit</h2>
+            <p class="text-sm text-gray-600">MLA, Vasai | Advocate for Progress</p>
+          </div>
+        </div>
+
+        <!-- Bio Summary -->
+        <p class="mt-2 text-gray-700 text-sm">
+          Sneha Dubey Pandit, the MLA of Vasai, is driven by her vision for sustainable development and the betterment of her constituency.
+          Her work reflects her dedication to improving the lives of Vasai’s residents.
+        </p>
+
+        <!-- Toggle Button -->
+        <button 
+          onclick="toggleDetails('bio-details-1')" 
+          class="mt-4 bg-green-500 text-white rounded-lg shadow-md card-button">
+          Read More
+        </button>
+
+        <!-- Detailed Biography (Hidden Initially) -->
+        <div id="bio-details-1" class="hidden mt-4 text-gray-700 text-sm">
+          <p>
+            Sneha Dubey Pandit has championed numerous developmental projects in Vasai, focusing on infrastructure, education, healthcare, and environmental conservation.
+            She ensures the voices of her constituents are heard at higher levels of governance.
+          </p>
+        </div>
+      </div>
+
+      <!-- Biography Card 2 -->
+      <div class="card relative bg-white rounded-lg shadow-md">
+        <!-- Title Inside Card -->
+                <!-- Header Section -->
+        <div class="flex items-center mb-4">
+          <img 
+            src="../img/snehaedit.JPG" 
+            alt="Sneha Dubey" 
+            class="card-img"
+          />
+          <div class="ml-4">
+            <h2 class="text-xl font-semibold text-gray-800">Sneha Dubey Pandit</h2>
+            <p class="text-sm text-gray-600">MLA, Vasai | Driving Change</p>
+          </div>
+        </div>
+
+        <!-- Bio Summary -->
+        <p class="mt-2 text-gray-700 text-sm">
+          Sneha Dubey Pandit’s leadership in Vasai has been transformative, focusing on empowering communities and promoting sustainable initiatives.
+          She continues to address the region’s challenges with innovative solutions.
+        </p>
+
+        <!-- Toggle Button -->
+        <button 
+          onclick="toggleDetails('bio-details-2')" 
+          class="mt-4 bg-blue-500 text-white rounded-lg shadow-md card-button">
+          Read More
+        </button>
+
+        <!-- Detailed Biography (Hidden Initially) -->
+        <div id="bio-details-2" class="hidden mt-4 text-gray-700 text-sm">
+          <p>
+            Through her efforts, Sneha has improved public transportation, enhanced access to healthcare, and boosted local businesses.
+            She has made Vasai a model constituency.
+          </p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- JavaScript for Toggle -->
+  <script>
+    function toggleDetails(id) {
+      const bioDetails = document.getElementById(id);
+      bioDetails.classList.toggle('hidden');
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sneha Dube Pandit, MLA, Vasai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../img/titlelogo.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Scroll-to-Top Button Animation */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .float-btn {
+            animation: float 2s infinite;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+
+    <!-- Navbar -->
+    <div id="navbar" class="sticky top-0 z-50"></div>
+    <!-- Hero Section -->
+    <div class="relative h-[500px] bg-cover bg-center" style="background-image: url('../img/snehadube3.jpg');">
+        <div class="absolute inset-0 bg-gradient-to-b from-black opacity-50"></div>
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
+            <h1 class="text-4xl md:text-5xl font-semibold">Contact Us</h1>
+            <p class="mt-4 text-lg md:text-xl">Sneha Dube Pandit, MLA, Vasai</p>
+        </div>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div id="contact-form" class="max-w-screen-xl mx-auto px-6 py-12">
+        <div class="flex flex-col md:flex-row gap-12">
+            <!-- Form -->
+            <div class="flex-1 bg-white rounded-lg shadow-xl p-8">
+                <h2 class="text-2xl font-semibold text-gray-800 text-center mb-6">Get in Touch</h2>
+                <form class="space-y-6">
+                    <!-- Name Field -->
+                    <div class="relative">
+                        <input type="text" id="name" placeholder=" " class="peer w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+                        <label for="name" class="absolute left-4 top-2 text-gray-500 peer-placeholder-shown:top-6 peer-placeholder-shown:text-gray-400 transition-all">Name</label>
+                    </div>
+                    <!-- Mobile Field -->
+                    <div class="relative">
+                        <input type="text" id="mobile" placeholder=" " class="peer w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+                        <label for="mobile" class="absolute left-4 top-2 text-gray-500 peer-placeholder-shown:top-6 peer-placeholder-shown:text-gray-400 transition-all">Mobile Number</label>
+                    </div>
+                    <!-- Email Field -->
+                    <div class="relative">
+                        <input type="email" id="email" placeholder=" " class="peer w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+                        <label for="email" class="absolute left-4 top-2 text-gray-500 peer-placeholder-shown:top-6 peer-placeholder-shown:text-gray-400 transition-all">Email</label>
+                    </div>
+                    <!-- District Field -->
+                    <div class="relative">
+                        <input type="text" id="district" placeholder=" " class="peer w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+                        <label for="district" class="absolute left-4 top-2 text-gray-500 peer-placeholder-shown:top-6 peer-placeholder-shown:text-gray-400 transition-all">District</label>
+                    </div>
+                    <!-- City Field -->
+                    <div class="relative">
+                        <input type="text" id="city" placeholder=" " class="peer w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500" required>
+                        <label for="city" class="absolute left-4 top-2 text-gray-500 peer-placeholder-shown:top-6 peer-placeholder-shown:text-gray-400 transition-all">City</label>
+                    </div>
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full py-3 bg-orange-600 text-white font-semibold rounded-lg hover:bg-orange-700 transition-all">Send</button>
+                </form>
+            </div>
+
+            <!-- Video Section with Adjusted Size -->
+            <div class="flex-1 max-w-md bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                <video class="w-full h-64 object-cover" src="../img/videoincontact.mp4" muted loop autoplay></video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Info Cards -->
+    <div class="mt-12 bg-gray-100 py-12 px-6">
+        <div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center">
+                <div class="text-4xl text-orange-600 mb-4">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h4 class="text-xl font-bold text-gray-800">Vasai</h4>
+                <div class="w-10 h-1 bg-orange-600 my-2 mx-auto"></div>
+                <a href="tel:02212345678" class="text-blue-600 hover:underline">022-12345678</a>
+                <p class="text-gray-600 mt-2">Vasai, Maharashtra</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center">
+                <div class="text-4xl text-orange-600 mb-4">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h4 class="text-xl font-bold text-gray-800">Vasai West</h4>
+                <div class="w-10 h-1 bg-orange-600 my-2 mx-auto"></div>
+                <a href="tel:02212345679" class="text-blue-600 hover:underline">022-12345679</a>
+                <p class="text-gray-600 mt-2">Vasai West, Maharashtra</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow text-center">
+                <div class="text-4xl text-orange-600 mb-4">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h4 class="text-xl font-bold text-gray-800">Vasai East</h4>
+                <div class="w-10 h-1 bg-orange-600 my-2 mx-auto"></div>
+                <a href="tel:02212345680" class="text-blue-600 hover:underline">022-12345680</a>
+                <p class="text-gray-600 mt-2">Vasai East, Maharashtra</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+   <div id="footer"></div>
+    <!-- Scroll to Top -->
+    <button id="scrollToTopBtn" class="fixed bottom-5 right-5 bg-orange-500 text-white p-3 rounded-full shadow-lg hover:bg-orange-600 hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="currentColor">
+            <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"/>
+        </svg>
+      </button>
+
+    <script>
+        $(document).ready(function () {
+            $("#navbar").load("navbar.html");
+            $("#footer").load("footer.html");
+        });
+
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        window.addEventListener('scroll', () => {
+            scrollToTopBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+        });
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        // navigation js
+
+     const menuButton = document.getElementById('menu-button');
+    const sidebar = document.getElementById('mobile-sidebar');
+    const closeSidebar = document.getElementById('close-sidebar');
+
+    menuButton.addEventListener('click', () => {
+      sidebar.classList.remove('translate-x-full');
+    });
+
+    closeSidebar.addEventListener('click', () => {
+      sidebar.classList.add('translate-x-full');
+    });
+    </script>
+</body>
+</html>

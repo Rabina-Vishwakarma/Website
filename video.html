@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos - Sneha Dube Pandit BJP, MLA,Maharashtra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../img/titlelogo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* CSS Grid Layout */
+        .yt-videos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+            gap: 20px; /* Space between grid items */
+            margin: 20px;
+        }
+
+        .yt {
+            position: relative;
+            padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+            height: 0;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .yt iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .view-more-btn 
+        {
+            height: 40px;
+            width: 160px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .view-more-btn:hover
+        {
+            background-color: blue;
+            color: #fff;
+        }
+        #footer 
+        {
+            margin-top: 20px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 1024px) {
+            .yt-videos {
+                grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .yt-videos {
+                grid-template-columns: 1fr; /* One column for small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- navigation  -->
+       <div id="navbar" class="sticky top-0 z-50"></div>
+    <!-- Section for YouTube videos -->
+    <div class="yt-videos">
+        <div class="yt">
+            <iframe class="elementor-video" title="Video 1" src="https://www.youtube.com/embed/zCOgoluDIGo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="yt">
+            <iframe class="elementor-video" title="Video 2" src="https://www.youtube.com/embed/Bwno_ghrfjA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="yt">
+            <iframe class="elementor-video" title="Video 3" src="https://www.youtube.com/embed/yepeRejHYiE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="yt">
+            <iframe class="elementor-video" title="Video 4" src="https://www.youtube.com/embed/seg0cw0LtrU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="yt">
+            <iframe class="elementor-video" title="Video 5" src="https://www.youtube.com/embed/QiTWHA8OfmU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="yt">
+            <iframe class="elementor-video" title="Video 6" src="https://www.youtube.com/embed/x7OKHJ36Wto" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="yt">
+            <iframe class="elementor-video" title="Video 7" src="https://www.youtube.com/embed/y1nuYCU7zgc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="yt">
+            <iframe class="elementor-video" title="Video 8" src="https://www.youtube.com/embed/C5ubcsePOOA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="yt">
+            <iframe class="elementor-video" title="Video 9" src="https://www.youtube.com/embed/ywSCYRzBaXA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+    <center><a href="https://www.youtube.com/results?search_query=sneha+dubey+pandit+speech"><button class="view-more-btn">View More Videos</button></center>
+    <!-- footer -->
+     <footer>
+       <div id="footer"></div>
+    
+     </footer>
+    <button id="scrollToTopBtn" class="fixed bottom-5 right-5 bg-orange-500 text-white p-3 rounded-full shadow-lg hover:bg-orange-600 hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="currentColor">
+            <path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"/>
+        </svg>
+      </button>
+    <script>
+        window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollToTopBtn.style.display = 'block';
+    } else {
+      scrollToTopBtn.style.display = 'none';
+    }
+  });
+
+  // Scroll to the top when the button is clicked
+  scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Smooth scrolling effect
+    });
+  });
+        // Load navbar and footer using jQuery
+     $(document).ready(function(){
+        $('#navbar').load('navbar.html');
+        $('#footer').load('footer.html');
+     })
+    </script>
+</body>
+</html>
